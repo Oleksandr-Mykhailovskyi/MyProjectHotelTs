@@ -1,0 +1,32 @@
+<form
+  [formGroup]="formGroup">
+
+<div>
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText [formControlName]="'name'">
+    <label for="float-input">Username</label>
+  </span>
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText [formControlName]="'surname'">
+    <label for="float-input">Surname</label>
+  </span>
+</div>
+
+<textarea pInputTextarea [formControlName]="'text'"></textarea>
+
+<div>
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText [formControlName]="'phone'">
+    <label for="float-input">Phone Number</label>
+  </span>
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText [formControlName]="'e_mail'">
+    <label for="float-input">Email</label>
+  </span>
+</div>
+  <a href="ty">
+<p-button (click)="collect()">
+  Klick
+</p-button>
+  </a>
+</form>

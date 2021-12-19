@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  margin-top: 12vh;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 15vh;
+}
+
+.button-container-1 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-1 button {
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #000;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.button-container-1 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.button-container-2 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vh;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-2 button {
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #000;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+.button-container-2 button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 11px;
+  margin-top: 17px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+a {
+  color: #00ff95;
+}
+
+.button-container-3 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8vh;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-3 button {
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #000;
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+.button-container-3 button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
+}
+
+
+/*body {*/
+/*  background-color: #c6b17f;*/
+/*}*/
+
+/*body {*/
+/*  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiBpZD0iQmdlblB0dHJuU3ZnUm9vdFByZXZpZXciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJCZ2VuUHR0cm5MYXllcjEiPjxnIGlkPSJQYXR0ZXJuUm9vdENvbnRlbnQxIj48ZyBpZD0iQmdlblB0dHJuTGF5ZXIxYmFja2dyb3VuZCI+PHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMSIgaWQ9IkJnZW5QdHRybkJhY2tncm91bmQxIiBjbGFzcz0iY29sb3JfMSBmaWxsX2NvbG9yXzEiIGZpbGw9IiNlMGQwNDEiPjwvcmVjdD48L2c+PC9nPjwvcGF0dGVybj48cGF0dGVybiB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9IkJnZW5QdHRybkxheWVyMiIgcGF0dGVyblRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSI+PGcgaWQ9IlBhdHRlcm5Sb290Q29udGVudDIiPjxnIGlkPSJCZ2VuUHR0cm5MYXllcjJFbGVtZW50MSI+PHVzZSB4bGluazpocmVmPSIjQmdlblB0dHJuRWxlbWVudDEiIHg9IjMwIiB5PSI1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MCwgMjUpIHNjYWxlKDEpIHRyYW5zbGF0ZSgtNTAsIC0yNSkgcm90YXRlKDAsIDUwLCAyNSkiPjwvdXNlPjx1c2UgeGxpbms6aHJlZj0iI0JnZW5QdHRybkVsZW1lbnQxIiB4PSI4MCIgeT0iNTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCwgNzUpIHNjYWxlKDEpIHRyYW5zbGF0ZSgtMTAwLCAtNzUpIHJvdGF0ZSgwLCAxMDAsIDc1KSI+PC91c2U+PHVzZSB4bGluazpocmVmPSIjQmdlblB0dHJuRWxlbWVudDEiIHg9Ii0yMCIgeT0iNTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDc1KSBzY2FsZSgxKSB0cmFuc2xhdGUoMCwgLTc1KSByb3RhdGUoMCwgMCwgNzUpIj48L3VzZT48L2c+PC9nPjwvcGF0dGVybj48c3ltYm9sIGlkPSJCZ2VuUHR0cm5FbGVtZW50MSI+PHBhdGggZD0iTTI1LjU1MiwxNS40OTdINDBMMjguMjY1LDI0LjQ0bDQuNzMyLDE0LjI5OEwyMCwzMC4yOThMNy4wMDMsMzguNzM5bDQuMTAxLTE0LjI5OEwwLDE1LjQ5N2gxNC41MDlMMjAsMS4yNjEgTDI1LjU1MiwxNS40OTd6IE0yMCwyMS41NDNMMy4wMjcsMTYuNTY3bC0wLjEyNywwLjEyN2w5LjQwMSw3LjM2OUwyMCwyMS41NDN6IE0yMCwyMS42MDdMOC41MTYsMzYuMzQ1bDAuMTI3LDAuMzE1TDIwLDI5LjEwMiBWMjEuNjA3eiBNMjAsMjEuNTQzVjQuMDk2aC0wLjEyN2wtNC41NDIsMTEuOTY3TDIwLDIxLjU0M3ogTTIwLDIxLjU0M2wxNy4wMzQtNS4wMzh2LTAuMTI3SDI0LjQxNUwyMCwyMS41NDN6IE0yMCwyMS41NDMgbDExLjE2NywxNC43MzlsMC4xMjUtMC4wNjNsLTQuMjkxLTEyLjU5N0wyMCwyMS41NDN6ICIgY2xhc3M9ImNvbG9yXzIgZmlsbF9jb2xvcl8yIiBmaWxsPSIjYzIyZDJkIj48L3BhdGg+PC9zeW1ib2w+PHBhdHRlcm4geD0iMCIgeT0iMCIgd2lkdGg9IjAiIGhlaWdodD0iMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9IkJnZW5QdHRybkxheWVyMyI+PGcgaWQ9IlBhdHRlcm5Sb290Q29udGVudDMiPjwvZz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGlkPSJCZ2VuUHR0cm5SY3RMYXllcjEiIGZpbGw9InVybCgjQmdlblB0dHJuTGF5ZXIxKSI+PC9yZWN0PjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGlkPSJCZ2VuUHR0cm5SY3RMYXllcjIiIGZpbGw9InVybCgjQmdlblB0dHJuTGF5ZXIyKSI+PC9yZWN0PjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGlkPSJCZ2VuUHR0cm5SY3RMYXllcjMiIGZpbGw9InVybCgjQmdlblB0dHJuTGF5ZXIzKSI+PC9yZWN0Pjwvc3ZnPg==');*/
+/*  background-attachment: fixed;*/
+/*}*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 { background-image: url("https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.img2 { background-image: url("https://images.pexels.com/photos/695193/pexels-photo-695193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.img3 { background-image: url("https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.img4 { background-image: url("https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.img5 { background-image: url("https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+.img6 { background-image: url("https://images.pexels.com/photos/5538715/pexels-photo-5538715.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+}
+
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f1b232;
+  border: 1px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: content-box;
+  height: content-box;
+  padding: 20px;
+  text-align: center;
+}
+
+/*.div-center {*/
+/*  text-align: center;*/
+/*}*/
+
+/*h1 { color: #CEF0D4; font-family: ‘Rouge Script’, cursive; font-size: 60px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34; }*/
+
+/*h4 { color: #CEF0D4; font-family: ‘Rouge Script’, cursive; font-size: 25px; font-weight: normal; line-height: 48px; margin: 3px 3px 50px; text-align: center; text-shadow: 1px 1px 2px #082b34; }*/
+
+/*#body_button{*/
+/*  height: 300px;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  color: #ddf;*/
+/*  text-align: center;*/
+/*  padding-top: 12vh;*/
+/*}*/
+/*.button_hola,*/
+/*.button_hola::before,*/
+/*.button_hola::after,*/
+/*.button_hola h3,*/
+/*.button_hola h3::before,*/
+/*.button_hola h3::after*/
+/*{*/
+/*  transition: all ease .5s;*/
+/*}*/
+
+/*.button_hola{*/
+/*  position: relative;*/
+/*  display: inline-block;*/
+/*  padding: 0.3em;*/
+/*  margin: 1em;*/
+/*  border: solid 1px;*/
+/*  text-transform: uppercase;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.button_hola:hover*/
+/*{*/
+/*  box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);*/
+/*}*/
+
+/*.button_hola h3*/
+/*{*/
+/*  display: inline-block;*/
+/*  width: 100%;*/
+/*  padding: 0.6em 2em;*/
+/*}*/
+
+/*.button_hola:hover h3*/
+/*{*/
+/*  color: #112;*/
+/*}*/
+
+/*.button_hola::before,*/
+/*.button_hola::after,*/
+/*.button_hola h3::before,*/
+/*.button_hola h3::after*/
+/*{*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  border: 1px;*/
+/*}*/
+
+/*.button_hola::before,*/
+/*.button_hola h3::before*/
+/*{*/
+/*  border-style: solid none;*/
+/*}*/
+
+/*.button_hola::before,*/
+/*.button_hola h3::after{*/
+/*  left: 0;*/
+/*  top: -0.4em;*/
+/*  width: 100%;*/
+/*  height: calc(100% + 0.8em);*/
+/*}*/
+
+/*.button_hola::after,*/
+/*.button_hola h3::after*/
+/*{*/
+/*  border-style: none solid;*/
+/*}*/
+
+/*.button_hola::after,*/
+/*.button_hola h3::before*/
+/*{*/
+/*  top: 0;*/
+/*  left: -0.4em;*/
+/*  height: 100%;*/
+/*  width: calc(100% + 0.8em);*/
+/*}*/
+
+/*.button_hola:hover::after,*/
+/*.button_hola:hover h3::after*/
+/*{*/
+/*  transform: scaleY(0);*/
+/*}*/
+
+/*.button_hola:hover::before,*/
+/*.button_hola:hover h3::before*/
+/*{*/
+/*  transform: scaleX(0);*/
+/*}*/
+
+/*.button_hola:hover h3::after,*/
+/*.button_hola:hover h3::before*/
+/*{*/
+/*  opacity: 0;*/
+/*}*/
+
+

@@ -207,6 +207,11 @@ a {
 /*  background-attachment: fixed;*/
 /*}*/
 
+.div-center {
+  text-align: center;
+  margin-right: auto;
+}
+
 body, html {
   height: 100%;
   margin: 0;

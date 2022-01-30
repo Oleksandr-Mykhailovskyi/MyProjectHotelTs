@@ -1,32 +1,108 @@
 <form
   [formGroup]="formGroup">
 
-<div>
-  <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [formControlName]="'name'">
-    <label for="float-input">Username</label>
-  </span>
-  <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [formControlName]="'surname'">
-    <label for="float-input">Surname</label>
-  </span>
-</div>
+            <div class="div-center">
+                <div class="div-space">
+                    <div class="box">
+                        <span class="p-float-label">
+                            <input id="float-input" type="text" pInputText [formControlName]="'name'">
+                            <label for="float-input">Username</label>
+                        </span>
+                    </div>
 
-<textarea pInputTextarea [formControlName]="'text'"></textarea>
+                </div>
+                <div class="div-space">
+                    <div class="box">
+                        <span class="p-float-label">
+                            <input id="float-input1" type="text" pInputText [formControlName]="'surname'">
+                            <label for="float-input1">Surname</label>
+                        </span>
+                    </div>
+            </div>
 
-<div>
-  <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [formControlName]="'phone'">
-    <label for="float-input">Phone Number</label>
-  </span>
-  <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [formControlName]="'e_mail'">
-    <label for="float-input">Email</label>
-  </span>
-</div>
-  <a href="ty">
-<p-button (click)="collect()">
-  Klick
-</p-button>
-  </a>
+
+            <div class="div-space">
+                <div class="box">
+                    <span class="p-float-label">
+                        <input id="float-input2" type="text" pInputText [formControlName]="'phone'">
+                        <label for="float-input2">Phone Number</label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="div-space">
+                <div class="box">
+                    <span class="p-float-label">
+                        <input id="float-input3" type="text" pInputText [formControlName]="'e_mail'">
+                        <label for="float-input3">Email</label>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="div-space, div-left">
+              <form class="form">
+                <div class="radio-container">
+                  <div class="form-item radio-btn nth-2">
+                    <input (click)="male()" type="radio" name="option1" id="radio1" checked>
+                    <label for="radio1">Male</label>
+                  </div>
+                </div>
+
+                <div class="div-space">
+                  <div class="radio-container">
+                    <div class="form-item radio-btn nth-2">
+                      <input type="radio" name="option1" id="radio2">
+                      <label (click)="female()" for="radio2">Female</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+
+            <div class="div-space">
+                <p>
+                    <label for="date">Date on: </label>
+                    <input pInputText [formControlName]="'dateOn'" type="date" id="date" name="date">
+                </p>
+            </div>
+
+            <div class="div-space">
+                  <p>
+                      <label for="date">Date off: </label>
+                      <input pInputText [formControlName]="'dateOff'" type="date" name="date">
+                  </p>
+            </div>
+
+
+            <div class="div-space">
+                <p>Vegan Breakfast + 50$ / day</p>
+                    <div class="div-space">
+                <p-inputSwitch (click)="veganBreakfastCheck()"></p-inputSwitch>
+                    </div>
+            </div>
+
+
+              <div class="div-center">
+                <div class="div-space">
+                  <div class="box">
+                        <span class="p-float-label">
+                            <input style="width: 400px; height: 200px" id="float-input4" type="text" pInputText [formControlName]="'text'">
+                            <label for="float-input4">Text some notes</label>
+                        </span>
+                  </div>
+                </div>
+                  </div>
+
+
+          <div class="div-space">
+                <a href="info">
+                  <p-button (click)="collect()">
+                    Finish
+                  </p-button>
+              </a>
+          </div>
+
+    </div>
 </form>

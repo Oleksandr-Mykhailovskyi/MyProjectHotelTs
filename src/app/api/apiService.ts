@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {Observable} from "rxjs";
 import {RoomsForRent} from "./rooms-for-rent";
 import {UserInfo} from "./user-info";
+import {SendEmailCommand} from "./send-email-command";
 
 
 @Injectable({
@@ -14,8 +15,8 @@ export class ApiService {
     private http: HttpClient
   ) {}
 
-  sayHi(): Observable<string> {
-    return this.http.get<string>('http://localhost:4200/api/sayHi');
+  test(): Observable<string> {
+    return this.http.get<string>('http://localhost:4200/api/test');
   }
 
   getRoom(id: number): Observable<RoomsForRent> {
@@ -23,10 +24,16 @@ export class ApiService {
   }
 
   sendUser(userInfo: UserInfo): Observable<UserInfo> {
-    return this.http.post<UserInfo>('http://localhost:4200/api/ty' , userInfo);
+    console.log('user info value ' + userInfo);
+    return this.http.post<UserInfo>('http://localhost:4200/api/info' , userInfo);
   }
 
   sendRoom(room: RoomsForRent): Observable<RoomsForRent> {
-    return this.http.post<RoomsForRent>('http://localhost:4200/api/room', room)
+    console.log('room: ' + room);
+    return this.http.post<RoomsForRent>('http://localhost:4200/api/room', room);
+  }
+
+  sendEmail(id: SendEmailCommand) : Observable<SendEmailCommand> {
+    return this.http.post<SendEmailCommand>('http://localhost:4200/api/sendEmail', id);
   }
 }

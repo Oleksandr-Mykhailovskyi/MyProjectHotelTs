@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService} from "../api/apiService";
 import {Router} from "@angular/router";
+import {RoomsForRent} from "../api/rooms-for-rent";
 
 @Component({
   selector: 'app-room-list',
@@ -29,7 +30,7 @@ export class RoomListComponent implements OnInit {
     // ]
   }
 
-  test(id: number): void {
+  getIdRoom(id: number): void {
     this.router.navigate([`book-now/${id}`]);
   }
 

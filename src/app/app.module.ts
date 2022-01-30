@@ -17,7 +17,12 @@ import { ShowRoomsForRentComponent } from './show-rooms-for-rent/show-rooms-for-
 import {InputTextModule} from 'primeng/inputtext';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {ReactiveFormsModule} from "@angular/forms";
-import { TyForBookComponent } from './ty-for-book/ty-for-book.component';
+import {CalendarModule} from 'primeng/calendar';
+import {InputSwitchModule} from 'primeng/inputswitch';
+import {AutoCompleteModule} from 'primeng/autocomplete';
+import {CheckboxModule} from 'primeng/checkbox';
+import {InfoAboutRentRoomComponent} from "./api/info-about-rent-room/info-about-rent-room.component";
+import { InfoAboutEndRentComponent } from './info-about-end-rent/info-about-end-rent.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,9 @@ import { TyForBookComponent } from './ty-for-book/ty-for-book.component';
     RoomComponent,
     RoomListComponent,
     ShowRoomsForRentComponent,
-    TyForBookComponent,
+    InfoAboutRentRoomComponent,
+    InfoAboutEndRentComponent
+
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,11 @@ import { TyForBookComponent } from './ty-for-book/ty-for-book.component';
     ButtonsModule,
     InputTextModule,
     InputTextareaModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CalendarModule,
+    InputSwitchModule,
+    AutoCompleteModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

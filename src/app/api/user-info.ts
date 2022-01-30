@@ -5,4 +5,8 @@ export interface UserInfo {
   text: string;
   phone: string;
   e_mail: string;
+  dateOn: String;
+  dateOff: String;
+  veganBreakfast: boolean;
+  sex: number;
 }

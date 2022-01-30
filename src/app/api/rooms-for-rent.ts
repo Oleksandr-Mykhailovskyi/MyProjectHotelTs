@@ -4,4 +4,7 @@ export interface RoomsForRent {
   text: string;
   breakfast: boolean;
   howManyPeople: number;
+  dateOn: String;
+  dateOff: String;
+  veganBreakfast: boolean;
 }

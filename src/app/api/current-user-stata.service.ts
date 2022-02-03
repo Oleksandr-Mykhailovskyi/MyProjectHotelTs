@@ -12,14 +12,10 @@ export class CurrentUserStataService {
     return this.sendEmailCommand;
   }
 
-  setUserId(userId: number) {
+  setId(userId: number, userIdRoom: number) {
     this.sendEmailCommand.idUser = userId;
+    this.sendEmailCommand.idRoom = userIdRoom;
   }
-
-  setURoomId(userRoom: number) {
-    this.sendEmailCommand.idRoom = userRoom;
-  }
-
 
   constructor() { }
 

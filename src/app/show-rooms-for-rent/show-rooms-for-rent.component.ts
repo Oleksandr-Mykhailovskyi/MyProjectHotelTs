@@ -70,18 +70,18 @@ export class ShowRoomsForRentComponent implements OnInit {
 
     this.showRoom = {
       id: 1,
+      roomId: 1,
       price: this.showRoom.price,
       text: this.formGroup.get('text')?.value,
       breakfast: this.showRoom.breakfast,
       howManyPeople: this.showRoom.howManyPeople,
       dateOn: this.formGroup.get('dateOn')?.value,
       dateOff: this.formGroup.get('dateOff')?.value,
-      veganBreakfast: this.checked
-
     };
 
     this.newUser = {
       id: 2,
+      userId: 2,
       name: this.formGroup.get('name')?.value,
       surname: this.formGroup.get('surname')?.value,
       text: this.formGroup.get('text')?.value,
@@ -89,13 +89,10 @@ export class ShowRoomsForRentComponent implements OnInit {
       e_mail: this.formGroup.get('e_mail')?.value,
       dateOn: this.formGroup.get('dateOn')?.value,
       dateOff: this.formGroup.get('dateOff')?.value,
-      veganBreakfast: this.checked,
       sex: this.userSex
     };
 
-    this.current.setUserId(this.newUser.id);
-
-    this.current.setURoomId(this.showRoom.id);
+    this.current.setId(this.newUser.userId, this.showRoom.roomId);
 
     console.log(this.current.getCommand());
 
@@ -104,34 +101,21 @@ export class ShowRoomsForRentComponent implements OnInit {
     this.roomService.sendUserInfo(this.newUser);
 
     this.roomService.sendEmail(this.current.getCommand());
-  }
+    // this.showRoom.price = this.showRoom.price + 50;
 
-  veganBreakfastCheck(): void {
-    if (!this.checked) {
-      this.checked = true;
-      // this.showRoom.price = this.showRoom.price + 50;
-
-      // To set two dates to two variables
-      // @ts-ignore
-      var date1 =new Date(this.formGroup.get('dateOn')?.value);
-      console.log(date1);
-      // @ts-ignore
-      var date2 =new Date(this.formGroup.get('dateOff')?.value);
-      console.log(date2);
-// To calculate the time difference of two dates
-      var Difference_In_Time = date2.getTime() - date1.getTime();
-      console.log(Difference_In_Time);
-// To calculate the no. of days between two dates
-      var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-      console.log(Difference_In_Days);
-      Difference_In_Days = Difference_In_Days * (this.showRoom.price + 50);
-      console.log(Difference_In_Days);
-      this.showRoom.price = Difference_In_Days;
-      console.log(this.showRoom.price);
-    }
-    else if (this.checked){
-      this.checked = false;
-    }
+    // To set two dates to two variables
+    // @ts-ignore
+    varz
+    var date1 = new Date(this.formGroup.get('dateOn')?.value);
+    // @ts-ignore
+    var date2 = new Date(this.formGroup.get('dateOff')?.value);
+    //To calculate the time difference of two dates
+    var Difference_In_Time = date2.getTime() - date1.getTime();
+    //To calculate the no. of days between two dates
+    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+    Difference_In_Days = Difference_In_Days * this.showRoom.price;
+    this.showRoom.price = Difference_In_Days;
+    console.log(this.showRoom.price);
   }
 
   male(): void {

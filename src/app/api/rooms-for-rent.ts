@@ -6,5 +6,5 @@ export interface RoomsForRent {
   howManyPeople: number;
   dateOn: String;
   dateOff: String;
-  veganBreakfast: boolean;
+  roomId: number;
 }

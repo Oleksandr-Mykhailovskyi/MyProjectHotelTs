@@ -1,5 +1,6 @@
 export interface UserInfo {
   id: number;
+  userId: number;
   name: string;
   surname: string;
   text: string;
@@ -7,6 +8,5 @@ export interface UserInfo {
   e_mail: string;
   dateOn: String;
   dateOff: String;
-  veganBreakfast: boolean;
   sex: number;
 }

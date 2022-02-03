@@ -21,7 +21,7 @@ import {CalendarModule} from 'primeng/calendar';
 import {InputSwitchModule} from 'primeng/inputswitch';
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {CheckboxModule} from 'primeng/checkbox';
-import {InfoAboutRentRoomComponent} from "./api/info-about-rent-room/info-about-rent-room.component";
+import {InfoAboutRentRoomComponent} from "./info-about-rent-room/info-about-rent-room.component";
 import { InfoAboutEndRentComponent } from './info-about-end-rent/info-about-end-rent.component';
 
 @NgModule({

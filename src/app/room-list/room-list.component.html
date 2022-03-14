@@ -13,67 +13,78 @@
 <!--             (click)="checkRoom(room.id)"></app-rooms>-->
 <!--</ng-container>-->
 
-<div id="card_container" data-offset="2">
-  <div id="card0">
-    <div class="shine"></div>
-    <div class="text-block">
-      <h1>Standard Room<small> 170$ / night</small></h1>
-      <h3> Without breakfast </h3>
-      <p style="margin-top: 10px">
-        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...
-      </p>
-      <div style="margin-left: 270px">
-      <button (click)="getIdRoom(1)" style="margin-top: 15px">book now</button>
-      </div>
-    </div>
-  </div>
-</div>
+<ng-container *ngFor="let room of items">
+  <app-room-item [hadder]=room.hader
+                 [price]=room.price
+                 [typeRoom]=room.typeRoom
+                 [inputOpis]=room.inputOpis
+                 [roomId]=room.roomId
+                 [idRoom]=room.idRoom
+                 (choice)="getIdRoom($event)"
+  ></app-room-item>
+</ng-container>
 
-<div id="card_container" data-offset="2" style="margin-top: 195px">
-  <div id="card2">
-    <div class="shine"></div>
-    <div class="text-block">
-      <h1>Standard Room<small> 250$ / night</small></h1>
-      <h3> With breakfast </h3>
-      <p style="margin-top: 10px">
-        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...
-      </p>
-      <div style="margin-left: 270px">
-      <button (click)="getIdRoom(2)" style="margin-top: 15px">book now</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!--<div id="card_container" data-offset="2">-->
+<!--  <div id="card0">-->
+<!--    <div class="shine"></div>-->
+<!--    <div class="text-block">-->
+<!--      <h1>Standard Room<small> 170$ / night</small></h1>-->
+<!--      <h3> Without breakfast </h3>-->
+<!--      <p style="margin-top: 10px">-->
+<!--        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...-->
+<!--      </p>-->
+<!--      <div style="margin-left: 270px">-->
+<!--      <button (click)="getIdRoom(1)" style="margin-top: 15px">book now</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
-<div id="card_container" data-offset="2" style="margin-top: 565px">
-  <div id="card">
-    <div class="shine"></div>
-    <div class="text-block">
-      <h1>Comfort Room<small> 450$ / night</small></h1>
-      <h3> With breakfast </h3>
-      <p style="margin-top: 10px">
-        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...
-      </p>
-      <div style="margin-left: 270px">
-      <button (click)="getIdRoom(3)" style="margin-top: 15px">book now</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!--<div id="card_container" data-offset="2" style="margin-top: 195px">-->
+<!--  <div id="card2">-->
+<!--    <div class="shine"></div>-->
+<!--    <div class="text-block">-->
+<!--      <h1>Standard Room<small> 250$ / night</small></h1>-->
+<!--      <h3> With breakfast </h3>-->
+<!--      <p style="margin-top: 10px">-->
+<!--        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...-->
+<!--      </p>-->
+<!--      <div style="margin-left: 270px">-->
+<!--      <button (click)="getIdRoom(2)" style="margin-top: 15px">book now</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
-<div id="card_container" data-offset="2" style="margin-top: 935px">
-  <div id="card3">
-    <div class="shine"></div>
-    <div class="text-block">
-      <h1>Luxury Room<small> 1000$ / night</small></h1>
-      <h3> With breakfast </h3>
-      <p style="margin-top: 10px">
-        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...
-      </p>
-      <div style="margin-left: 270px">
-      <button (click)="getIdRoom(4)" style="margin-top: 15px">book now</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!--<div id="card_container" data-offset="2" style="margin-top: 565px">-->
+<!--  <div id="card">-->
+<!--    <div class="shine"></div>-->
+<!--    <div class="text-block">-->
+<!--      <h1>Comfort Room<small> 450$ / night</small></h1>-->
+<!--      <h3> With breakfast </h3>-->
+<!--      <p style="margin-top: 10px">-->
+<!--        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...-->
+<!--      </p>-->
+<!--      <div style="margin-left: 270px">-->
+<!--      <button (click)="getIdRoom(3)" style="margin-top: 15px">book now</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div id="card_container" data-offset="2" style="margin-top: 935px">-->
+<!--  <div id="card3">-->
+<!--    <div class="shine"></div>-->
+<!--    <div class="text-block">-->
+<!--      <h1>Luxury Room<small> 1000$ / night</small></h1>-->
+<!--      <h3> With breakfast </h3>-->
+<!--      <p style="margin-top: 10px">-->
+<!--        Named after the impressive, quintessential London district that the rooms overlook — including southfacing panoramas of the Houses of Parliament and Waterloo Place where Regent Street meets The Mall — the Westminster Suites encapsulate London style and culture...-->
+<!--      </p>-->
+<!--      <div style="margin-left: 270px">-->
+<!--      <button (click)="getIdRoom(4)" style="margin-top: 15px">book now</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 

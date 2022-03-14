@@ -23,6 +23,7 @@ import {AutoCompleteModule} from 'primeng/autocomplete';
 import {CheckboxModule} from 'primeng/checkbox';
 import {InfoAboutRentRoomComponent} from "./info-about-rent-room/info-about-rent-room.component";
 import { InfoAboutEndRentComponent } from './info-about-end-rent/info-about-end-rent.component';
+import { RoomItemComponent } from './room-list/room-item/room-item.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InfoAboutEndRentComponent } from './info-about-end-rent/info-about-end-
     RoomListComponent,
     ShowRoomsForRentComponent,
     InfoAboutRentRoomComponent,
-    InfoAboutEndRentComponent
+    InfoAboutEndRentComponent,
+    RoomItemComponent
 
   ],
   imports: [

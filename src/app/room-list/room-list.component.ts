@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService} from "../api/apiService";
 import {Router} from "@angular/router";
-import {RoomsForRent} from "../api/rooms-for-rent";
+import {MenuItem} from "primeng/api";
+import {RoomItemComponent} from "./room-item/room-item.component";
+import {RoomCreat} from "../api/room-creat";
 
 @Component({
   selector: 'app-room-list',
@@ -12,12 +14,20 @@ export class RoomListComponent implements OnInit {
 
   // private showRoom: ShowRoomsForRentComponent = new ShowRoomsForRentComponent(this.apiService);
 
+  items: RoomCreat[] = [];
+
   constructor(private apiService: ApiService, private router: Router) { }
 
   ngOnInit(): void {
 
-    // this.guestInfo();
+    this.items = [
+      {inputOpis: 'rererre', hader: 'standard', choice: 0, price: 1000, roomId: 1, typeRoom:'standard', idRoom: 'card0'},
+      {inputOpis: 'rererre2', hader: 'standard2', choice: 0, price: 2000, roomId: 1, typeRoom:'standard', idRoom: 'card1'}
+    ]
 
+
+    // this.guestInfo();
+    //
     // this.apiService.guestInfo().subscribe(
     //   n => this.options = n
     // );
@@ -32,6 +42,10 @@ export class RoomListComponent implements OnInit {
 
   getIdRoom(id: number): void {
     this.router.navigate([`book-now/${id}`]);
+  }
+
+  sayHi() {
+    console.log('Hi');
   }
 
   // guestInfo(): void {
